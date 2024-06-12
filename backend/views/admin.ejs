@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+</head>
+<body>
+  <h1>Conversations</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Text</th>
+        <th>Summary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% conversations.forEach(conversation => { %>
+        <tr>
+          <td><%= conversation.id %></td>
+          <td><%= conversation.text %></td>
+          <td><%= conversation.summary %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+### POST Request Example ###
+
+POST http://localhost:3000/conversations
+Content-Type: application/json
+
+{
+  "text": "This is a sample conversation text."
+}
+
+### GET Request Example ###
+
+GET http://localhost:3000/conversations?page=1&limit=10&search=sample
+
+### POST File Upload Example ###
+
+POST http://localhost:3000/files/upload
+Content-Type: multipart/form-data
+
+
+
+
+
